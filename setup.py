@@ -35,7 +35,18 @@ setup(
     packages=find_packages(exclude=['docs', 'tests*']),
     include_package_data=True,
     author='Jianying Li',
+
+
     install_requires=install_requires,
     dependency_links=dependency_links,
-    author_email='jianying.li@gmail.com'
+    author_email='jianying.li@gmail.com',
+
+
+
+    entry_points='''
+        [console_scripts]
+        accordJP=accordJP.cli:main
+    ''',
+
+
 )
