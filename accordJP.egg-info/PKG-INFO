@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: accordJP
+Version: 0.0.1
+Summary: This project is to help Dr. Motsinger-Reif for her accord clinical trial project pipeline automation.
+Home-page: https://github.com/2waybene/accordJP
+Author: Jianying Li
+Author-email: jianying.li@gmail.com
+License: BSD
+Download-URL: https://github.com/2waybene/accordJP/tarball/0.0.1
+Description: accordJP
+        ===============================
+        
+        version number: 0.0.1
+        author: Jianying Li
+        
+        Overview
+        --------
+        
+        This project is to help Dr. Motsinger-Reif for her accord clinical trial project pipeline automation.
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip:
+        
+            $ pip install accordJP
+        
+        
+        Or clone the repo:
+        
+            $ git clone https://github.com/2waybene/accordJP.git
+            $ python setup.py install
+            
+        Contributing
+        ------------
+        
+        TBD
+        
+        Example
+        -------
+        
+        TBD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

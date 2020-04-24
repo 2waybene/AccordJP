@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+accordJP/__init__.py
+accordJP/analysisPipes.py
+accordJP/cli.py
+accordJP.egg-info/PKG-INFO
+accordJP.egg-info/SOURCES.txt
+accordJP.egg-info/dependency_links.txt
+accordJP.egg-info/entry_points.txt
+accordJP.egg-info/requires.txt
+accordJP.egg-info/top_level.txt

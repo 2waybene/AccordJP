@@ -1,5 +1,5 @@
 import click
-import analysisPipes
+#from analysisPipes import model_step_1
 
 @click.group()
 def main(args=None):
@@ -12,7 +12,7 @@ def main(args=None):
 
 def launch_model_step_1 (workingPath):
     click.echo ('Launch Model Step 1')
-    model_step_1 (workingPath)
+#    model_step_1 (workingPath)
 
 @main.command()
 def initdb():
