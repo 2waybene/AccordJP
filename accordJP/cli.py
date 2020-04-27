@@ -1,18 +1,19 @@
 import click
-#from analysisPipes import model_step_1
+import sys
+from . import  analysisPipeline
+
 
 @click.group()
 def main(args=None):
     pass
 
-
-
 @main.command()
-@click.argument('workingPath', type=click.Path(exists=True))
+@click.argument('filename', type=click.Path(exists=True))
+def touch(filename):
+    """Print FILENAME if the file exists."""
+    click.echo(click.format_filename(filename))
+    analysisPipeline.launchModelStep1(filename)
 
-def launch_model_step_1 (workingPath):
-    click.echo ('Launch Model Step 1')
-#    model_step_1 (workingPath)
 
 @main.command()
 def initdb():
