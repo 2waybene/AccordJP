@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="db007e81-ac49-468b-8bef-2d950abfefdc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accordJP.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/accordJP.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accordJP/analysisPipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/accordJP/analysisPipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accordJP/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/accordJP/cli.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +24,6 @@
   <component name="ProjectId" id="1atZbhkLZBXmTuPPdSfAPEMG2NE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -86,6 +85,10 @@
     <configuration />
   </component>
   <component name="WindowStateProjectService">
+    <state x="528" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588100276396">
+      <screen x="0" y="23" width="1680" height="967" />
+    </state>
+    <state x="528" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.967@0.23.1680.967" timestamp="1588100276396" />
     <state width="1659" height="274" key="GridCell.Tab.0.bottom" timestamp="1587562309866">
       <screen x="0" y="23" width="1680" height="984" />
     </state>

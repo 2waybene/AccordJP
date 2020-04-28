@@ -12,3 +12,5 @@ accordJP.egg-info/dependency_links.txt
 accordJP.egg-info/entry_points.txt
 accordJP.egg-info/requires.txt
 accordJP.egg-info/top_level.txt
+tests/__init__.py
+tests/test_sample.py
