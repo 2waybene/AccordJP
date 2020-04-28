@@ -8,12 +8,14 @@ def main(args=None):
     pass
 
 @main.command()
-@click.argument('filename', type=click.Path(exists=True))
+@click.argument('filename', type=str)
+#click.Path(exists=True))
+
 def touch(filename):
     """Print FILENAME if the file exists."""
     """Print FILENAME if the file exists."""
     click.echo(click.format_filename(filename))
-    analysisPipeline.launchModelStep1(filename)
+    analysisPipeline.launchModelStep(filename)
 
 @main.command()
 @click.argument('filename', type=click.Path(exists=True))

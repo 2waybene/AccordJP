@@ -4,7 +4,7 @@ requirements.txt
 setup.cfg
 setup.py
 accordJP/__init__.py
-accordJP/analysisPipes.py
+accordJP/analysisPipeline.py
 accordJP/cli.py
 accordJP.egg-info/PKG-INFO
 accordJP.egg-info/SOURCES.txt
