@@ -32,7 +32,8 @@ setup(
       'Programming Language :: Python :: 3',
     ],
     keywords='',
-    packages=find_packages(exclude=['docs', 'tests*']),
+    #packages=find_packages(exclude=['docs', 'tests*']),
+    packages=find_packages(include=['docs', 'tests*', 'accordJP']),
     include_package_data=True,
     author='Jianying Li',
 
