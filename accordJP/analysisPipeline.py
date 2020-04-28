@@ -1,5 +1,11 @@
+import sys
+import shlex
+import subprocess as sp
 
 
+import sys
+import shlex 
+import subprocess as sp
 
 def launchModelStep (filepath, phenotype = "pheno_data.txt"):
     print ("****** Begin JOB:' " + str(filepath) + "'")
@@ -13,14 +19,26 @@ def launchModelStep (filepath, phenotype = "pheno_data.txt"):
     print ('Current working path:', str(filepath))
 
     ## Create system command
-        #cmd = ' '.join(('sbatch -p standard -o '+path+'/model_setup_step1.out ./bin/model_setup_step1.sh'), str(path) , str(phenotype))
 
+<<<<<<< HEAD
+    cmd = "sbatch -p standard -o " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh  " + filepath + " " +   str(phenotype)
+=======
     # cmd = 'srun --partition=bioinfo --cpus-per-task=8 -o RHTN_testRun/rhtn_combined/model_setup_step1.out ./bin/model_setup_step1.sh  RHTN_testRun/rhtn_combined pheno_data.txt'
 
+<<<<<<< HEAD
+    cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh  " + filepath +  "  " + str(phenotype)
+   
+    ## cmd = "sbatch -p standard -o " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh" + filepath +  str(phenotype)
+    print (cmd)
+    sp.call (cmd)
+=======
     cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh" + filepath +  str(phenotype)
 
     # cmd = "sbatch -p standard -o " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh" + filepath +  str(phenotype)
+>>>>>>> 5298bed03e8244fc732fc6120d30ba8b1f0b366d
     print (cmd)
+    sp.call(cmd,  shell=True)
+>>>>>>> a8af152408a3fad88b3b0363dafd815c8a35f136
     print ("Launching model setup step 1:" +  cmd)
 
         #dout=log_file,stderr=logerr_file)
@@ -43,7 +61,7 @@ def launchModelStep1 (root, filepath, phenotype = "pheno_data.txt"):
     cmd = "sbatch -p standard -o " + path + "/model_setup_step1.out " + path + "/bin/model_setup_step1.sh " + path +  str(phenotype)
     print (cmd)
     print ("Launching model setup step 1:" +  cmd)
-
+    sp.call(cmd)
     print ("*************************************")
     print ("******* End JOB: model step 1")
     print ("*************************************\n")
