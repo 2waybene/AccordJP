@@ -9,7 +9,10 @@ def main(args=None):
 
 @main.command()
 @click.argument('filename', type=str)
+<<<<<<< HEAD
 #click.Path(exists=True))
+=======
+>>>>>>> 5298bed03e8244fc732fc6120d30ba8b1f0b366d
 
 def touch(filename):
     """Print FILENAME if the file exists."""

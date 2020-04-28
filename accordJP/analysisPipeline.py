@@ -3,7 +3,6 @@ import sys
 import shlex 
 import subprocess as sp
 
-
 def launchModelStep (filepath, phenotype = "pheno_data.txt"):
     print ("****** Begin JOB:' " + str(filepath) + "'")
 
@@ -17,7 +16,15 @@ def launchModelStep (filepath, phenotype = "pheno_data.txt"):
 
     ## Create system command
 
+<<<<<<< HEAD
     cmd = "sbatch -p standard -o " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh  " + filepath + " " +   str(phenotype)
+=======
+    # cmd = 'srun --partition=bioinfo --cpus-per-task=8 -o RHTN_testRun/rhtn_combined/model_setup_step1.out ./bin/model_setup_step1.sh  RHTN_testRun/rhtn_combined pheno_data.txt'
+
+    cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh" + filepath +  str(phenotype)
+
+    # cmd = "sbatch -p standard -o " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh" + filepath +  str(phenotype)
+>>>>>>> 5298bed03e8244fc732fc6120d30ba8b1f0b366d
     print (cmd)
     sp.call(cmd,  shell=True)
     print ("Launching model setup step 1:" +  cmd)
@@ -27,8 +34,6 @@ def launchModelStep (filepath, phenotype = "pheno_data.txt"):
     print ("*************************************")
     print ("******* End JOB: model step 1")
     print ("*************************************\n")
-
-
 
 
 def launchModelStep1 (root, filepath, phenotype = "pheno_data.txt"):
