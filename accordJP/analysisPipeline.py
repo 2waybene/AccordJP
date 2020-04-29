@@ -60,9 +60,11 @@ def launchHeritability (filepath):
     print ('This is the working path entered from the user:', str(filepath))
 
     ## Create system command
-
-    # cmd = 'sbatch -p standard -o '+path+'/sbatch_logs/gcta.out ./bin/run_gcta.sh',path))
-    cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/sbatch_logs/gcta.out  ./bin/run_gcta.sh  " + filepath
+	    ## ON NCSU cluter server
+    cmd = 'sbatch -p standard -o '+filepath+'/sbatch_logs/gcta.out ./bin/run_gcta.sh  ' + filepath
+  
+  ## on Bioinfomatic slurm
+    ## cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/sbatch_logs/gcta.out  ./bin/run_gcta.sh  " + filepath
     print (cmd)
     sp.call(cmd,  shell=True)
     print ("Launching launchHeritability step 1 of 3:" + cmd)

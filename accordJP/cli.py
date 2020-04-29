@@ -34,7 +34,6 @@ def modelStep1(inputdir, phenodata=None):
 
 @main.command()
 @click.argument('inputdir', type=click.Path(exists=True))
-
 def modelStep2(inputdir):
 
     """
@@ -50,6 +49,23 @@ def modelStep2(inputdir):
     click.echo(click.format_filename(inputdir))
     analysisPipeline.launchModelStep2(inputdir)
 
+
+
+@main.command()
+@click.argument('inputdir', type=click.Path(exists=True))
+def heritability(inputdir):
+
+    """
+
+    Run accordJP pipeline, starting launch heritability test
+
+    As of this moment, JYL -- FIXME
+
+    Print INPUTDIR if the directory exists.
+
+    """
+    click.echo(click.format_filename(inputdir))
+    analysisPipeline.launchHeritability(inputdir)
 
 
 
