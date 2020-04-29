@@ -17,9 +17,11 @@ def launchModelStep1 (filepath, phenotype = "pheno_data.txt"):
 
     ## Create system command
 
-    # cmd = "sbatch -p standard -o " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh  " + filepath + " " +   str(phenotype)
+    ## ON NCSU cluter server
+    cmd = "sbatch -p standard -o " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh  " + filepath + " " +   str(phenotype)
 
-    cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh  " + filepath +  "  " + str(phenotype)
+    ## ON Bionformatic slurm system
+    ## cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step1.out ./bin/model_setup_step1.sh  " + filepath +  "  " + str(phenotype)
     print (cmd)
     sp.call(cmd,  shell=True)
     print ("Launching model setup step 1:" +  cmd)
@@ -35,8 +37,14 @@ def launchModelStep2 (filepath):
     print ('This is the working path entered from the user:', str(filepath))
 
     ## Create system command
-    ## ('sbatch -p standard -o '+path+'/model_setup_step2.out ./bin/model_setup_step2.sh',path))
-    cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step2.out ./bin/model_setup_step2.sh  " + filepath
+
+
+    ## ON NCSU cluter server
+
+    cmd = 'sbatch -p standard -o '+path+'/model_setup_step2.out ./bin/model_setup_step2.sh  '  + filepath
+
+    ## ON Bionformatic slurm system
+    #3 cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step2.out ./bin/model_setup_step2.sh  " + filepath
     print (cmd)
     sp.call(cmd,  shell=True)
 
