@@ -36,7 +36,7 @@ def launchModelStep2 (filepath):
 
     ## Create system command
     ## ('sbatch -p standard -o '+path+'/model_setup_step2.out ./bin/model_setup_step2.sh',path))
-    cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step2.out ./bin/model_setup_step2.sh  " + filepath
+    cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step2.out ./bin/model_setup_step2.sh  " + filepath  
     print (cmd)
     sp.call(cmd,  shell=True)
 
