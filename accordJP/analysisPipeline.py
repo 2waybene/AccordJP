@@ -41,7 +41,7 @@ def launchModelStep2 (filepath):
 
     ## ON NCSU cluter server
 
-    cmd = 'sbatch -p standard -o '+path+'/model_setup_step2.out ./bin/model_setup_step2.sh  '  + filepath
+    cmd = 'sbatch -p standard -o '+filepath+'/model_setup_step2.out ./bin/model_setup_step2.sh  '  + filepath
 
     ## ON Bionformatic slurm system
     #3 cmd = "srun --partition=bioinfo --cpus-per-task=8 -o  " + filepath + "/model_setup_step2.out ./bin/model_setup_step2.sh  " + filepath
