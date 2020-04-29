@@ -23,7 +23,7 @@ def modelStep1(inputdir, phenodata=None):
     As of this moment, JYL -- FIXME
 
     Instruction from Dr. John House:
-    
+
     Make sure your phenotype data file is called '/home/accord/data/analysis/pheno_data.txt' before launching step 1
     Update: File should be named "pheno_data_*****.txt" Step 1 will prompt user for pheno file name
     Make sure you are in ~/accord/data/analysis when you start running this code
