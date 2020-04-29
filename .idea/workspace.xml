@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db007e81-ac49-468b-8bef-2d950abfefdc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accordJP/analysisPipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/accordJP/analysisPipeline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accordJP/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/accordJP/cli.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +84,10 @@
     <configuration />
   </component>
   <component name="WindowStateProjectService">
+    <state x="717" y="375" width="844" height="382" key="#Notifications" timestamp="1588193497297">
+      <screen x="0" y="23" width="1680" height="965" />
+    </state>
+    <state x="717" y="375" width="844" height="382" key="#Notifications/0.23.1680.965@0.23.1680.965" timestamp="1588193497297" />
     <state x="528" y="248" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1588100276396">
       <screen x="0" y="23" width="1680" height="967" />
     </state>
